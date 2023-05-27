@@ -2,7 +2,7 @@ import './Botao.css'
 
 const Botao = (props) => {
     return(<botton className="botao">
-        {props.texto}
+        {props.children}
     </botton>
 
     )
