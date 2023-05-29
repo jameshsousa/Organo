@@ -1,6 +1,7 @@
 import { useState } from 'react';
-import Banner from './componentes/Banner';
+import Banner from './componentes/Banner/Banner';
 import Formulario from './componentes/Formulario';
+import Time from './componentes/Time';
 
 function App() {
 
@@ -13,8 +14,12 @@ function App() {
 
   return (
     <div className="App">
-      <Banner />
-      <Formulario aoColaboradorCadastrado={colaborador => aoNovoColaboradorAdicionado(colaborador)}/>
+      <Banner/>
+      <Formulario aoColaboradorCadastrado={colaborador => setColaboradores } />
+      <Time nome="Programação"/>
+      <Time nome="Frontend"/>
+      <Time nome="Data Science"/>
+
     </div>
   );
 }
